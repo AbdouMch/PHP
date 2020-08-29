@@ -7,7 +7,10 @@
     </head>
     
     <body>
-        <form action="cible.php" method="POST">
+        <form action="cible.php" method="POST" enctype="multipart/form-data">
+            <p>Photo de profile :<br />
+                <input type="file" name="monimage"/>
+            </p>
             <p>Genre: <br/>
 				<input type="radio" name="genre" value="M. " id="monsieur" /> <label>Monsieur</label> <br/>
 				<input type="radio" name="genre" value="Mme. " id="madame" /> <label>Madame</label><br/>
@@ -16,8 +19,6 @@
             <p> <label> Nom : <input name="nom" type="text" /></label></p>
             <p> <label> Adresse mail : <input name="email" type="email" /></label></p>
             <p><input type="checkbox" name="newslettre" /> <label>Voulez-vous s'inscrir à notre newslettre <br/></label></p>
-            
-
             <p> <input type="submit" /></p>
         </form>
     </body>
