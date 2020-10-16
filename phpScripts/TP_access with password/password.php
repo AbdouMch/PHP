@@ -1,7 +1,6 @@
 <?php
 if ((isset($_POST["password"])) and (htmlspecialchars($_POST["password"]=="kangourou")))
 {
-    //header("Location: http://www.example.com/another-page.php");
     header("Location: datacenter.php");
 }
 else
